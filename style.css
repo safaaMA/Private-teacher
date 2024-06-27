@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #232428;
+}
+
+img {
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imgTec {
+    width: 200px;
+}
+
+.LeftSide {
+    border-left: 1px solid #f0f8ff30;
+}
+
+.LeftSide,
+.info-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 1px 1px;
+}
+
+.Nametech {
+    font-size: 9px;
+    color: aliceblue;
+}
+
+.list {
+    text-align: center;
+    margin: 0 0px;
+}
+
+ul {
+    margin: 14px 0px;
+}
+
+.Active {
+    background: #f0f8ff29;
+    padding: 2px 6px;
+    border-radius: 12px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+li a,
+i.fa-solid,
+.fa-brands,
+.fa-regular {
+    color: aliceblue;
+}
+
+li a {
+    color: aliceblue;
+    margin: 0px 12px 0px 0px;
+}
+
+.RightSide {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 6px 8px;
+    color: aliceblue;
+    align-items: center;
+    border-bottom: 1px solid #f0f8ff30;
+
+}
+
+.report {
+    width: 98%;
+    background: #f1eef314;
+    color: antiquewhite;
+    text-align: end;
+    padding: 12px;
+    border-radius: 14px;
+    margin: 0 14px;
+}
+.titleRep {
+    font-size: 8px;
+    margin: 0px 0px 7px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.all-re {
+    font-size: 14px;
+}
+
+.all-re a {
+    color:#fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.logOut {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #332346;
+    align-items: center;
+    height: 37px;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 15px;
+}
+
+.logOut a {
+    margin: 0px 10px;
+    color: aliceblue;
+}
+
+textarea {
+    height: 157px;
+    text-align: end;
+    padding: 1px 4px;
+    font-size: 17px;
+    border-radius: 14px;
+}
+
+.content {
+    text-align: -webkit-right;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 20px 0px;
+}
+
+input[type="submit"] {
+    background: aliceblue;
+    border: none;
+    margin: 14px 0;
+    border-radius: 6px;
+    color: #232428;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+input[type="submit"]:hover {
+    background: #332346;
+    color: aliceblue;
+}
+
+.comment {
+    width: 330px;
+    background: #f1eef314;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 17px;
+}
+
+.title-comment {
+    font-size: 9px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3px;
+}
+
+.title-comment a {
+    color: aliceblue;
+}
+
+.name-photo-Student {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.name {
+    font-size: 8px;
+}
+
+.photo {
+    width: 46px;
+    margin: 0 14px;
+}
+
+.photo img {
+    border-radius: 50%;
+}
+
+.name-photo-Student {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.comment-info {
+    background: #f0f8ff0f;
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin: 10px 2px 17px 2px;
+}
+
+.caption {
+    font-size: 10px;
+}
+
+.caption .date {
+    font: 1em sans-serif;
+    margin: 6px 0px;
+    color: #f0f8ff57;
+}
+
+.report-detels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.showAll {
+    font-size: larger;
+}
+.NumberStodent {
+    background: #49226c6e;
+    margin: 17px 0px;
+    padding: 11px 0px;
+    text-align: center;
+    border-radius: 13px;
+    color: antiquewhite;
+}
+
+.IntNum {
+    margin: 14px;
+    font-size: 47px;
+    font-family: ui-sans-serif;
+}
+
+.Numbers {
+    width: 98%;
+}
+
+.seting {
+    display: none;
+}
+
+@media screen and (max-width:912px) {
+
+    .LeftSide {
+        display: none;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    .seting {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 75px;
+
+    }
+
+    .LeftSide {
+        display: none;
+        position: absolute;
+        top: 38px;
+        right: -7px;
+        z-index: 1000;
+        background-color: #232428;
+        padding: 10px;
+        border-radius: 13px;
+    }
+
+    .LeftSide.Activ.display {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .comment {
+        width: 86%;
+        margin: 5px auto 8px;
+    }
+
+    .report {
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    .report-detels {
+        align-items: center;
+        width: 100%;
+    }
+
+    .Numbers {
+        width: 86%;
+        margin: 0 auto;
+    }
+    .number-of-reg {
+        width: 86%;
+        margin: 0 auto;
+    }
+}
+
+.AddStudent {
+    display: none;
+    position: absolute;
+    background: #000000bf;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    z-index: 10000;
+}
+
+form.Form-Add-Student {
+    background: aliceblue;
+    margin: 90px;
+    border-radius: 14px;
+}
+.mainbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 19px;
+}
+.allreport-btn{
+    background: chartreuse;
+    width: 34%;
+    padding: 8px;
+    border-radius: 13px;
+    color: #121212;
+
+}
+.boxinput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px 52px;
+    width: 28%;
+}
+
+.boxinput.se {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1px 56px;
+}
+
+.boxSe {
+    margin: 0px 23px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+input#name,
+input#code,
+input#password {
+    width: 100%;
+    margin: 7px 0px;
+    height: 38px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: end;
+    padding: 0px 3px
+}
+
+.code-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+button {
+    width: 148px;
+    height: 38px;
+    margin: 0px 8px;
+    background: #232428;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 779px) {
+    .mainbox {
+        flex-direction: column;
+        width: 100%;
+        margin: 31px auto;
+    }
+
+    .boxinput {
+        width: 80%;
+    }
+
+    .code-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .boxinput.se {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form.Form-Add-Student {
+        margin: 8px auto;
+        width: 99%;
+    }
+
+}
+
+.AddStudent.display {
+    display: block;
+}
+
+input.submit-Student {
+    background: #232428;
+    padding: 10px 0px;
+    width: 50%;
+    margin: 10px auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close,
+.closeHw {
+    text-align: end;
+}
+
+i.fa-regular.fa-circle-xmark {
+    color: #232428;
+    margin: 12px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+i.fa-regular.fa-circle-xmark:hover {
+    color: #233da8;
+    font-size: 29px;
+}
+
+.title-Add-Studen {
+    color: aliceblue;
+    background: #232428;
+    border-radius: 0px 0px 19px 19px;
+}
+
+.Form-Add-Student.WH {
+    margin: 31px 31px;
+}
+
+.boxinput.WHBOX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 52px;
+    width: 74%;
+}
+
+textarea#Detils {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 4px 11px;
+}
+
+.boxinput.WHFILE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 52px;
+    width: 100%;
+}
+
+.HWlabel {
+    background: blueviolet;
+    width: 34%;
+    padding: 5px 0px;
+    border-radius: 11px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 803px) {
+    .mainbox {
+        align-items: center;
+    }
+
+    .HWlabel {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 488px) {
+    .Form-Add-Student.WH {
+        margin: auto;
+    }
+
+    .HWlabel {
+        width: 74%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    direction: rtl;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
+
+.closeTime {
+    text-align: end;
+}
+
+input[type="time"] {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: no-repeat;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+input.notTime {
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+p.note {
+    text-align: center;
+    background: #332346;
+    color: #fff;
+    width: 99%;
+    margin: auto;
+    border-radius: 13px;
+}
+.number-of-reg {
+    background: #332346;
+    width: 98%;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    flex-direction: column;
+}
+p.offside {
+    font-size: 18px;
+    padding: 5px;
+}

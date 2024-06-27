@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    text-decoration: none;
+}
+
+.logOut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-end;
+}
+
+.logOut a {
+    color: aliceblue;
+
+}
+
+i.fa-solid.fa-arrow-right-from-bracket {
+    margin: 0px 10px;
+    color: aliceblue;
+
+}
+
+.interface {
+    background: #0049fe;
+    width: 98%;
+    margin: 0px auto;
+    border-radius: 16px;
+}
+
+.logo {
+    width: 142px;
+}
+
+img {
+    width: 100%;
+}
+
+.big-Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 9px;
+    color: antiquewhite;
+}
+
+.Pro-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 6px;
+}
+
+.report {
+    background: aliceblue;
+    margin: 9px 0px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.report-inter {
+    width: 98%;
+    margin: 0px auto;
+}
+
+.interface-down {
+    width: 98%;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+.Regester {
+    width: 35%;
+    background: #0049fe;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 16px;
+    height: 264px;
+}
+
+.Regester h5 {
+    font-size: 25px;
+    padding: 17px 0px 0px 0px;
+}
+
+.Regester h1 {
+    font-size: 65px;
+    margin: 20px 0px;
+}
+
+.Regester.Time {
+    width: 64%;
+}
+
+.Regester.Time h5 {
+    margin: 0px 0px 16px 0px;
+}
+
+textarea {
+    width: 95%;
+    height: 118px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: end;
+}
+
+input[type="submit"] {
+    width: 95%;
+    border: none;
+    padding: 3px;
+    border-radius: 6px;
+    color: #fff;
+    background: #73d37b70;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 2s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(38, 216, 32);
+}
+
+.time-of-lec {
+    text-align: center;
+    margin: 46px auto;
+    width: 98%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    direction: rtl;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+/* لون خلفية رؤوس الأعمدة */
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
+
+.pdf-link-container {
+    margin: 20px 0;
+}
+
+.pdf-link-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-link-container button:hover {
+    background-color: #0056b3;
+}
+
+.pdf-viewer-container {
+    margin: 20px 0;
+}
+
+.show-ex {
+    width: 98%;
+    margin: 10px auto;
+    background: aliceblue;
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.show-ex h5 {
+    font-size: 21px;
+    border-bottom: 1px solid #0000000d;
+    width: 32%;
+    margin: 18px auto;
+}
+
+.report p {
+    padding: 11px;
+}
+
+.report h5 {
+    font-size: 20px;
+    padding: 6px;
+}
+
+.caption {
+    margin: 18px 0px;
+}
+
+.time-of-lec h5 {
+    font-size: 19px;
+}
+
+@media (max-width: 600px) {
+    .interface-down {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Regester {
+        width: 100%;
+        margin: 0px 0px 11px 0px;
+    }
+
+    .Regester.Time {
+        width: 100%;
+    }
+}
+
+.Regester-Examp {
+    width: 90%;
+    height: 468px;
+    text-align: -webkit-center;
+    background: #0049fe;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 16px;
+
+}
+
+.Regester-dgree {
+    width: 35%;
+    background: #0049fe;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 16px;
+    height: 468px;
+    margin: 0px 16px;
+}
+
+.form-examp {
+    text-align: -webkit-center;
+}
+
+.boxForm-Examp {
+    width: 317px;
+    margin: 15px 0px;
+
+}
+
+.ex-de {
+    font-size: 129px;
+    margin: 72px;
+}
+
+@media (max-width: 883px) {
+    .interface-down.for-exam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Regester-dgree {
+        width: 100%;
+        margin: 20px 16px;
+    }
+
+    .Regester-Examp {
+        width: 100%;
+        
+    }
+    
+}
+.schedule-table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: #392b4b;
+    width: 341px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 14px;
+}
+.group-name-sc {
+    border-bottom: 1px solid #ffffff1a;
+    width: 80%;
+    margin: 5px auto 15px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 16px 0px;
+}
